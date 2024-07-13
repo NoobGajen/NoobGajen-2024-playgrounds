@@ -190,7 +190,6 @@ Example structure:
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
-By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
 
 ### Understanding Git History
 
@@ -271,4 +270,26 @@ When your pull request is under review, you have two common strategies for manag
       git push origin Gajendra/writeup_v1.2
       ```
 
-This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request.
+    This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request. So, here is some important command to maintaining branches
+
+3. **Basic Commands for Branch Management**:
+
+   - **Delete a Branch**:
+     To delete a branch once it's merged and no longer needed:
+
+     ```bash
+     git branch -d Gajendra/writeup
+     ```
+
+     This command deletes the local branch `Gajendra/writeup`. Use `-D` instead of `-d` to force delete a branch that hasn't been merged.
+
+   - **Move/Rename a Branch**:
+     To rename the current branch you're on:
+
+     ```bash
+     git branch -m Gajendra/writeup_v1.2 Gajendra/writeup_v1.3
+     ```
+
+     This command renames the current branch from `Gajendra/writeup_v1.2` to `Gajendra/writeup_v1.3`.
+
+By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
