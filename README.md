@@ -34,7 +34,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 
     That's it! Now your system has its own SSH keys ready to go.
 
-<figure><img src=".gitbook/assets/Generating a New SSH Key 0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".files_for_readme/images/Generating a New SSH Key 0.png" alt=""><figcaption></figcaption></figure>
 
 #### **Adding Your SSH Key to the ssh-agent**
 
@@ -67,36 +67,36 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     And then manually copy the output.
 2.  In the upper-right corner of any page, click your **profile photo**,
 
-    <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 1.png" alt=""><figcaption></figcaption></figure>
 3.  Then, click on **Settings**.
 
-    <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 2.png" alt=""><figcaption></figcaption></figure>
 4.  In the user settings sidebar, click **SSH and GPG keys,** then click on "**New SSH key**"
 
-    <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 3.png" alt=""><figcaption></figcaption></figure>
 5.  In the "Title" field, add a descriptive label for the new key. For example, if you're using a Linux on Virtual Machine, you might call this key "Linux on Virtual Machine". Then, Paste your public key into the "Key" field.
 
-    <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 4.png" alt=""><figcaption></figcaption></figure>
 
 After inserting all the details, click 'Add SSH key' button. If it prompted for the password, confirm it by using your GitHub password. You will then receive a successful message, something like `You have successfully added the key 'Linux on Virtual Machine'`.
 
-<figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 5.png" alt=""><figcaption></figcaption></figure>
 
 ### Setting Up Your Own Copy of the Repository
 
 1.  **Fork the repo on GitHub to your personal account.** Click the `Fork` button on the `gajabaar/2024-playground` Public page. (This needs to be done only once.)
 
-    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 0.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 0.png" alt=""><figcaption></figcaption></figure>
 2.  After clicking the **Fork button**, we will be redirected to a page where we can customize our forked repository. Here, we don't need to make any changes, as everything looks fine. So, we processed by clicking on `Create fork` button.
 
-    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 1.png" alt=""><figcaption></figcaption></figure>
 3.  **Clone the repository:** Click on the green `Code` button. It will open a small window. Then click on `SSH` and copy the repository's URL using the copy button or by manually selecting the URL. This URL will be copied to your clipboard. You can use this URL to clone the repository onto your local machine.
 
-    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
     Now, we have the SSH URL of our forked repository, we can use it to clone our forked repo onto our local machine using the command `git clone <repo URL>`.
 
-    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 3.png" alt=""><figcaption></figcaption></figure>
 
 ### Organizing your Work
 
@@ -130,7 +130,7 @@ Example structure:
        git branch -a
        ```
 
-       <figure><img src=".gitbook/assets/Adding Changes 0.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Adding Changes 0.png" alt=""><figcaption></figcaption></figure>
 3.  **Create and Switch to a New Branch**:
 
     * After cloning the repository, create a new branch for your changes and switch to it:
@@ -140,7 +140,7 @@ Example structure:
     git checkout your_branch_name
     ```
 
-    <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".files_for_readme/images/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
 
     This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 4. **Make Changes and Commit**:
@@ -151,7 +151,7 @@ Example structure:
        git commit -m "Descriptive message of what you did"
        ```
 
-       <figure><img src=".gitbook/assets/Adding Changes 2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Adding Changes 2.png" alt=""><figcaption></figcaption></figure>
    * The `git add .` command stages all changes in your working directory for commit, while `git commit` records the changes with a descriptive message explaining the purpose of the commit.
 5. **Push Your Changes**:
    *   Finally, push your committed changes to your forked repository on GitHub:
@@ -160,7 +160,7 @@ Example structure:
        git push origin your_branch_name
        ```
 
-       <figure><img src=".gitbook/assets/Adding Changes 3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Adding Changes 3.png" alt=""><figcaption></figcaption></figure>
    * This command sends your local branch and commits to the remote repository, making them accessible for collaboration and review.
 
 ### Opening a Pull Request on GitHub
@@ -168,17 +168,17 @@ Example structure:
 1. **Switch to Your Branch on GitHub**:
    *   Navigate to your forked repository on GitHub. Make sure you switch to the branch where you made your changes.
 
-       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 0.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Opening a Pull Request on GitHub 0.png" alt=""><figcaption></figcaption></figure>
 2. **Initiate a Pull Request**:
    *   Click on the green `Compare & pull request` button. If this button is not available, click on the `Contribute` button, then select `Open a pull request`.
 
-       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 1.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Opening a Pull Request on GitHub 1.png" alt=""><figcaption></figcaption></figure>
 3. **Describe Your Changes**:
    * You will be taken to a new page where you can describe the changes you made. Provide a clear and concise description of your changes in the provided text box. This helps the repository maintainers understand the purpose and context of your modifications.
 4. **Open the Pull Request**:
    *   After describing your changes, click on the `Create pull request` button to open your pull request.
 
-       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src=".files_for_readme/images/Opening a Pull Request on GitHub 2.png" alt=""><figcaption></figcaption></figure>
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
