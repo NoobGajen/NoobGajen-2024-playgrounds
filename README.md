@@ -159,6 +159,8 @@ Example structure:
        ```bash
        git push origin your_branch_name
        ```
+
+       <figure><img src=".gitbook/assets/Adding Changes 3.png" alt=""><figcaption></figcaption></figure>
    * This command sends your local branch and commits to the remote repository, making them accessible for collaboration and review.
 
 ### Making a Pull Request
