@@ -247,25 +247,25 @@ When your pull request is under review, you have two common strategies for manag
    *   If you prefer a cleaner history in your pull request, create a new branch for further modifications:
 
        ```bash
-       git checkout -b writeup1
+       git checkout -b writeup_v1.2
        ```
 2. **Continue Your Work on the New Branch**:
    * Make necessary changes, commit them, and push to the new branch.
 3. **Once the Pull Request is Accepted**:
-   *   Sync your `main` branch to include any updates:
+   1.  Sync your `main` branch to include any updates:
 
        ```bash
        git checkout main
        git pull origin main
        ```
-   *   Rebase your new branch on `main` to incorporate the latest changes:
+   2.  Rebase your new branch on `main` to sync the latest changes:
 
        ```bash
-       git checkout writeup1
+       git checkout writeup_v1.2
        git rebase main
        ```
-   *   Push the changes to update your new branch:
+   3.  Push the changes to update your new branch:
 
        ```bash
-       git push origin writeup1
+       git push origin writeup_v1.2
        ```
