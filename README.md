@@ -81,10 +81,10 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 5.  In the "Title" field, add a descriptive label for the new key. For example, if you're using a Linux on Virtual Machine, you might call this key "Linux on Virtual Machine". Then, Paste your public key into the "Key" field.
 
     <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 4.png" alt=""><figcaption></figcaption></figure>
-6. Click **Add SSH key**.
-7. If prompted, confirm your GitHub password.
 
-For detailed instructions, refer to the [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+After inserting all the details, click 'Add SSH key' button. If it prompted for the password, confirm it by using your GitHub password. You will then receive a successful message, something like `You have successfully added the key 'Linux on Virtual Machine'`.
+
+<figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 5.png" alt=""><figcaption></figcaption></figure>
 
 #### Setting Up Your Own Copy of the Repository
 
