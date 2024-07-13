@@ -54,7 +54,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 1.  Copy the SSH key to your clipboard.
 
     ```bash
-    sudo apt-get install xclip
+    sudo apt-get install xclip -y
     xclip -sel clip < ~/.ssh/id_rsa.pub
     ```
 
@@ -176,7 +176,9 @@ Example structure:
 3. **Describe Your Changes**:
    * You will be taken to a new page where you can describe the changes you made. Provide a clear and concise description of your changes in the provided text box. This helps the repository maintainers understand the purpose and context of your modifications.
 4. **Open the Pull Request**:
-   * After describing your changes, click on the `Create pull request` button to open your pull request.
+   *   After describing your changes, click on the `Create pull request` button to open your pull request.
+
+       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 2.png" alt=""><figcaption></figcaption></figure>
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
