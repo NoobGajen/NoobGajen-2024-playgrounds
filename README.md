@@ -231,6 +231,8 @@ When your pull request is under review, you have two common strategies for manag
         git checkout your_branch_name
         git rebase main
         ```
+
+        <figure><img src=".gitbook/assets/Continue Working on the Same Branch 1.png" alt=""><figcaption></figcaption></figure>
     3.  Push your changes to update your pull request:
 
         ```bash
@@ -238,7 +240,7 @@ When your pull request is under review, you have two common strategies for manag
         ```
 
     This approach maintains a single separate branch for ongoing work, ensuring all changes are synchronized before finalizing the pull request.
-    
+
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
@@ -267,4 +269,3 @@ When your pull request is under review, you have two common strategies for manag
        ```bash
        git push origin writeup1
        ```
-
