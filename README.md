@@ -16,6 +16,7 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [What to Do While Your Pull Request is Pending Review](./#what-to-do-while-your-pull-request-is-pending-review)
   * [Continue Working on the Same Branch](./#approach-1-continue-working-on-the-same-branch)
   * [Create a New Branch for Continued Work](./#approach-2-create-a-new-branch-for-continued-work)
+    * [**Basic Commands for Branch Management**](./#basic-commands-for-branch-management)
 
 ### Setting Up SSH Keys
 
@@ -190,7 +191,6 @@ Example structure:
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
-
 ### Understanding Git History
 
 To understand your Git history and key terms:
@@ -243,53 +243,48 @@ When your pull request is under review, you have two common strategies for manag
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
-   * If you prefer a cleaner history in your pull request, leave the branch you used to open the pull request (`Gajendra/writeup`) as it is and create a new branch such as `Gajendra/writeup_v1.2` for further modifications:
+   *   If you prefer a cleaner history in your pull request, leave the branch you used to open the pull request (`Gajendra/writeup`) as it is and create a new branch such as `Gajendra/writeup_v1.2` for further modifications:
 
-     ```bash
-     git checkout -b Gajendra/writeup_v1.2
-     ```
+       ```bash
+       git checkout -b Gajendra/writeup_v1.2
+       ```
+2.  **Once the Pull Request is Accepted**:
 
-2. **Once the Pull Request is Accepted**:
-   1. Sync your `main` branch to include the latest modifications and updates:
+    1.  Sync your `main` branch to include the latest modifications and updates:
 
-      ```bash
-      git checkout main
-      git pull origin main
-      ```
+        ```bash
+        git checkout main
+        git pull origin main
+        ```
+    2.  Rebase your new branch on `main` to incorporate the latest changes:
 
-   2. Rebase your new branch on `main` to incorporate the latest changes:
+        ```bash
+        git checkout Gajendra/writeup_v1.2
+        git rebase main
+        ```
+    3.  Push the changes to update your new branch:
 
-      ```bash
-      git checkout Gajendra/writeup_v1.2
-      git rebase main
-      ```
+        ```bash
+        git push origin Gajendra/writeup_v1.2
+        ```
 
-   3. Push the changes to update your new branch:
+    This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized, and maintaining a cleaner history in your pull request. So, here is some important command to maintaining branches
 
-      ```bash
-      git push origin Gajendra/writeup_v1.2
-      ```
+#### **Basic Commands for Branch Management**:
 
-    This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request. So, here is some important command to maintaining branches
+*   **Delete a Branch**: To delete a branch once it's merged and no longer needed:
 
-3. **Basic Commands for Branch Management**:
+    ```bash
+    git branch -d Gajendra/writeup
+    ```
 
-   - **Delete a Branch**:
-     To delete a branch once it's merged and no longer needed:
+    This command deletes the local branch `Gajendra/writeup`. Use `-D` instead of `-d` to force delete a branch that hasn't been merged.
+*   **Move/Rename a Branch**: To rename the current branch you're on:
 
-     ```bash
-     git branch -d Gajendra/writeup
-     ```
+    ```bash
+    git branch -m Gajendra/writeup_v1.2 Gajendra/writeup_v1.3
+    ```
 
-     This command deletes the local branch `Gajendra/writeup`. Use `-D` instead of `-d` to force delete a branch that hasn't been merged.
-
-   - **Move/Rename a Branch**:
-     To rename the current branch you're on:
-
-     ```bash
-     git branch -m Gajendra/writeup_v1.2 Gajendra/writeup_v1.3
-     ```
-
-     This command renames the current branch from `Gajendra/writeup_v1.2` to `Gajendra/writeup_v1.3`.
+    This command renames the current branch from `Gajendra/writeup_v1.2` to `Gajendra/writeup_v1.3`.
 
 By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
