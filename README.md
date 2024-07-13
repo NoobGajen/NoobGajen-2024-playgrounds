@@ -104,14 +104,14 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
 When working on a specific challenge, ensure your contributions are organized as follows:
 
-* Create a directory named after the challenge name directory (e.g., `learning_Git` for learngitbranching, `cryptopals` for cryptopals writeups), etc...
-* Within the challenge directory, create a subdirectory named after your Name or username.
-* Place all your work for that challenge within our subdirectory.
+1. Create a directory similar to challenge name (e.g., `learning_Git` for learngitbranching, `cryptopals` for cryptopals ), etc., for their write-ups if directory is not present.
+2. Within the challenge directory, create a subdirectory from your Name or username.
+3. Place all your work for that challenge within your subdirectory.
 
 Example structure:
 
 ```bash
-/learning_Git/our_username/our_files_and_folders_here
+/learning_Git/your_username/your_files_and_folders_here
 # Example: 
 # /learning_Git/GajendraMahato/1.1.introduction-sequence-write-up.md
 # /learning_Git/GajendraMahato/1.2.ramping-up-write-up.md
@@ -119,22 +119,21 @@ Example structure:
 
 ### Adding Changes
 
-1.  **Update main.** Before you make any changes, first checkout main:
+1.  First of all, make sure you are in your repository directory:
 
     ```bash
-    git checkout main
-    git pull
+    cd 2024-playground
     ```
-2.  **Create a new branch or switch to your branch.** After cloning the repository, create a new branch:
+2.  After cloning the repository, create a new branch.:
 
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
-3.  **Make your changes and commit them.** Once you have created your branch, make your changes and commit them:
+3.  Once you have created your branch, make your changes and commit them:
 
     ```bash
-    git add -A
+    git add .
     git commit -m "Descriptive message of what you did"
     ```
 4.  **Push up your changes.** Push your changes to your fork:
