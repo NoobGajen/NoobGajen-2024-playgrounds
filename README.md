@@ -272,7 +272,4 @@ When your pull request is under review, you have two common strategies for manag
      git push origin writeup1
      ```
 
-   This method ensures that your pull request remains focused and concise, without accumulating numerous commits during review.
 
-
-These approaches provide flexibility based on personal preference and project requirements. For further details on merging and rebasing, refer to the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes/creating-and-editing-pull-requests). Adjust the steps as needed to suit your workflow and ensure efficient collaboration.
