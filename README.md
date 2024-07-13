@@ -142,7 +142,7 @@ Example structure:
         <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
 
 
-    * This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
+    This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 4. **Make Changes and Commit**:
    *   Once you have switched to your branch, make your desired changes to the codebase:
 
