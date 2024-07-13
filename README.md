@@ -129,18 +129,16 @@ Example structure:
        ```bash
        git branch -a
        ```
-
        <figure><img src=".gitbook/assets/Adding Changes 0.png" alt=""><figcaption></figcaption></figure>
 3.  **Create and Switch to a New Branch**:
 
     *   After cloning the repository, create a new branch for your changes and switch to it:
 
-        <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
-
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
+        <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
 
     * This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 4. **Make Changes and Commit**:
