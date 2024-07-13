@@ -271,4 +271,4 @@ When your pull request is under review, you have two common strategies for manag
       git push origin Gajendra/writeup_v1.2
       ```
 
-This approach involves maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request.
+This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request.
