@@ -16,6 +16,7 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [What to Do While Your Pull Request is Pending Review](./#what-to-do-while-your-pull-request-is-pending-review)
   * [Continue Working on the Same Branch](./#approach-1-continue-working-on-the-same-branch)
   * [Create a New Branch for Continued Work](./#approach-2-create-a-new-branch-for-continued-work)
+    * [Basic Commands for Branch Management](./#basic-commands-for-branch-management)
 
 ### Setting Up SSH Keys
 
@@ -190,8 +191,6 @@ Example structure:
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
-By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
-
 ### Understanding Git History
 
 To understand your Git history and key terms:
@@ -231,6 +230,8 @@ When your pull request is under review, you have two common strategies for manag
         git checkout your_branch_name
         git rebase main
         ```
+
+        <figure><img src=".gitbook/assets/Continue Working on the Same Branch 1.png" alt=""><figcaption></figcaption></figure>
     3.  Push your changes to update your pull request:
 
         ```bash
@@ -238,33 +239,52 @@ When your pull request is under review, you have two common strategies for manag
         ```
 
     This approach maintains a single separate branch for ongoing work, ensuring all changes are synchronized before finalizing the pull request.
-    
+
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
-   *   If you prefer a cleaner history in your pull request, create a new branch for further modifications:
+   *   If you prefer a cleaner history in your pull request, leave the branch you used to open the pull request (`Gajendra/writeup`) as it is and create a new branch such as `Gajendra/writeup_v1.2` for further modifications:
 
        ```bash
-       git checkout -b writeup1
+       git checkout -b Gajendra/writeup_v1.2
        ```
-2. **Continue Your Work on the New Branch**:
-   * Make necessary changes, commit them, and push to the new branch.
-3. **Once the Pull Request is Accepted**:
-   *   Sync your `main` branch to include any updates:
+2.  **Once the Pull Request is Accepted**:
 
-       ```bash
-       git checkout main
-       git pull origin main
-       ```
-   *   Rebase your new branch on `main` to incorporate the latest changes:
+    1.  Sync your `main` branch to include the latest modifications and updates:
 
-       ```bash
-       git checkout writeup1
-       git rebase main
-       ```
-   *   Push the changes to update your new branch:
+        ```bash
+        git checkout main
+        git pull origin main
+        ```
+    2.  Rebase your new branch on `main` to incorporate the latest changes:
 
-       ```bash
-       git push origin writeup1
-       ```
+        ```bash
+        git checkout Gajendra/writeup_v1.2
+        git rebase main
+        ```
+    3.  Push the changes to update your new branch:
 
+        ```bash
+        git push origin Gajendra/writeup_v1.2
+        ```
+
+    This approach requires maintaining multiple branches for ongoing work, ensuring all changes are synchronized, and maintaining a cleaner history in your pull request. So, here is some important command to maintaining branches
+
+#### **Basic Commands for Branch Management**:
+
+*   **Delete a Branch**: To delete a branch once it's merged and no longer needed:
+
+    ```bash
+    git branch -d Gajendra/writeup
+    ```
+
+    This command deletes the local branch `Gajendra/writeup`. Use `-D` instead of `-d` to force delete a branch that hasn't been merged.
+*   **Move/Rename a Branch**: To rename the current branch you're on:
+
+    ```bash
+    git branch -m Gajendra/writeup_v1.2 Gajendra/writeup_v1.3
+    ```
+
+    This command renames the current branch from `Gajendra/writeup_v1.2` to `Gajendra/writeup_v1.3`.
+
+By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
