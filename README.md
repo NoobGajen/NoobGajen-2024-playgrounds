@@ -2,7 +2,7 @@
 
 ## 2024-Playground Project
 
-Welcome to the `2024-Playground` repository! This document will guide you through the setup process and understanding the contribution guidelines which is essential for participating in this project.
+Welcome to the `2024-Playground` repository! This document will guide you through the setup process and understanding the contribution guidelines, which is essential for participating in this project.
 
 ### Steps for Contributing
 
@@ -69,15 +69,16 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     ```
 
     And then manually copy the output.
-2.  In the upper-right corner of any page, click your **profile photo**, 
+2.  In the upper-right corner of any page, click your **profile photo**,
 
     <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 1.png" alt=""><figcaption></figcaption></figure>
-3. In the user settings sidebar, click **SSH and GPG keys**.
-4. Click **New SSH key** or **Add SSH key**.
-5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
-6. Paste your key into the "Key" field.
-7. Click **Add SSH key**.
-8. If prompted, confirm your GitHub password.
+3. Then, click on  **Settings**.![](<.gitbook/assets/Adding the SSH Key to Your GitHub Account 2.png>)
+4. In the user settings sidebar, click **SSH and GPG keys**.
+5. Click **New SSH key** or **Add SSH key**.
+6. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+7. Paste your key into the "Key" field.
+8. Click **Add SSH key**.
+9. If prompted, confirm your GitHub password.
 
 For detailed instructions, refer to the [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
