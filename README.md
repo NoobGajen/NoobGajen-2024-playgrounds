@@ -11,7 +11,7 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [Setting Up Your Own Copy of the Repository (Forked Repository)](./#setting-up-your-own-copy-of-the-repository)
 * [Organizing Your Work](./#organizing-your-work)
 * [Adding Changes](./#adding-changes)
-* [Making a Pull Request](./#making-a-pull-request)
+* [Opening a Pull Request on GitHub](./#opening-a-pull-request-on-github)
 
 ### Setting Up SSH Keys
 
@@ -163,12 +163,21 @@ Example structure:
        <figure><img src=".gitbook/assets/Adding Changes 3.png" alt=""><figcaption></figcaption></figure>
    * This command sends your local branch and commits to the remote repository, making them accessible for collaboration and review.
 
-### Making a Pull Request
+### Opening a Pull Request on GitHub
 
-1.  **Switch to the branch where you made changes.**
+1. **Switch to Your Branch on GitHub**:
+   *   Navigate to your forked repository on GitHub. Make sure you switch to the branch where you made your changes.
 
-    ```bash
-    git checkout your_branch_name
-    ```
-2. **Open a pull request.** Go to your fork on GitHub, and you should see a button to create a pull request from your branch.
-3. **Review and submit.** Double-check to ensure you are making a pull request against the right branch. Enter a descriptive title in the title field.
+       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 0.png" alt=""><figcaption></figcaption></figure>
+2. **Initiate a Pull Request**:
+   *   Click on the green `Compare & pull request` button. If this button is not available, click on the `Contribute` button, then select `Open a pull request`.
+
+       <figure><img src=".gitbook/assets/Opening a Pull Request on GitHub 1.png" alt=""><figcaption></figcaption></figure>
+3. **Describe Your Changes**:
+   * You will be taken to a new page where you can describe the changes you made. Provide a clear and concise description of your changes in the provided text box. This helps the repository maintainers understand the purpose and context of your modifications.
+4. **Open the Pull Request**:
+   * After describing your changes, click on the `Create pull request` button to open your pull request.
+5. **Review and Feedback**:
+   * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
+
+By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other developers. Happy coding!
