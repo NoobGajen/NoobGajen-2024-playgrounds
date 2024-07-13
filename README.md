@@ -72,7 +72,9 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 2.  In the upper-right corner of any page, click your **profile photo**,
 
     <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 1.png" alt=""><figcaption></figcaption></figure>
-3. Then, click on  **Settings**.![](<.gitbook/assets/Adding the SSH Key to Your GitHub Account 2.png>)
+3.  Then, click on  **Settings**.
+
+    <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 2.png" alt=""><figcaption></figcaption></figure>
 4. In the user settings sidebar, click **SSH and GPG keys**.
 5. Click **New SSH key** or **Add SSH key**.
 6. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
