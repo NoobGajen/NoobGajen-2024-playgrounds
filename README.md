@@ -12,8 +12,10 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [Organizing Your Work](./#organizing-your-work)
 * [Adding Changes](./#adding-changes)
 * [Opening a Pull Request on GitHub](./#opening-a-pull-request-on-github)
-* [Understanding Git History](#understanding-git-history)
-* [What to Do While Your Pull Request is Pending Review](#what-to-do-while-your-pull-request-is-pending-review)
+* [Understanding Git History](./#understanding-git-history)
+* [What to Do While Your Pull Request is Pending Review](./#what-to-do-while-your-pull-request-is-pending-review)
+  * [**Continue Working on the Same Branch**](./#approach-1-continue-working-on-the-same-branch)
+  * [**Create a New Branch for Continued Work**](./#approach-2-create-a-new-branch-for-continued-work)
 
 ### Setting Up SSH Keys
 
@@ -28,7 +30,6 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     ```
 
     This creates a new SSH key, using the provided email as a label. [See more](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-
 2.  When prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
     ```bash
@@ -104,7 +105,6 @@ For more detailed steps, refer to the [GitHub guide](https://docs.github.com/en/
     <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 3.png" alt=""><figcaption></figcaption></figure>
 
     For more details, see the [GitHub guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-fork).
-
 
 ### Organizing your Work
 
@@ -196,8 +196,8 @@ By following these steps, you can contribute to the `2024-Playground` repository
 
 To understand what happens in your Git history, it's crucial to get familiar with a few commands and terms:
 
-- **origin**: The remote repository you cloned from (your fork).
-- **upstream**: The original repository you forked from (the parent repo).
+* **origin**: The remote repository you cloned from (your fork).
+* **upstream**: The original repository you forked from (the parent repo).
 
 To view your git history in a helpful way, use the following command:
 
@@ -216,63 +216,57 @@ There are two common approaches to handling ongoing work while your pull request
 1. **Keep Working on Your Same Branch**:
    * Continue your work on the same branch while your pull request is pending review.
 2. **After Your Pull Request is Accepted**:
-   * Sync your `main` branch:
+   *   Sync your `main` branch:
 
-     ```bash
-     git checkout main
-     git pull origin main
-     ```
+       ```bash
+       git checkout main
+       git pull origin main
+       ```
+   *   Rebase interactively on `main`:
 
-   * Rebase interactively on `main`:
+       ```bash
+       git checkout your_branch_name
+       git rebase main
+       ```
+   *   Push changes again if needed:
 
-     ```bash
-     git checkout your_branch_name
-     git rebase main
-     ```
-
-   * Push changes again if needed:
-
-     ```bash
-     git push origin your_branch_name
-     ```
+       ```bash
+       git push origin your_branch_name
+       ```
 
 This ensures your branch is up-to-date with the latest changes from the `main` branch before creating a new pull request if necessary. For more details on merging and rebasing, refer to the [GitHub guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes/creating-and-editing-pull-requests).
 
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
-   * If your pull request is pending from the `writeup` branch, create a new branch such as `writeup1` for continued work.
+   *   If your pull request is pending from the `writeup` branch, create a new branch such as `writeup1` for continued work.
 
-     ```bash
-     git checkout -b writeup1
-     ```
-
+       ```bash
+       git checkout -b writeup1
+       ```
 2. **Continue Your Work on the New Branch**:
    * Make changes, commit, and push to the new branch.
-
 3. **Once the Pull Request is Accepted**:
-   * Sync your `main` branch:
+   *   Sync your `main` branch:
 
-     ```bash
-     git checkout main
-     git pull origin main
-     ```
+       ```bash
+       git checkout main
+       git pull origin main
+       ```
+   *   Rebase interactively on `main`:
 
-   * Rebase interactively on `main`:
+       ```bash
+       git checkout writeup1
+       git rebase main
+       ```
+   *   Push changes again if needed:
 
-     ```bash
-     git checkout writeup1
-     git rebase main
-     ```
-
-   * Push changes again if needed:
-
-     ```bash
-     git push origin writeup1
-     ```
+       ```bash
+       git push origin writeup1
+       ```
 
 This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.
 
----
+***
 
 Feel free to adjust any parts to better match your style or to provide additional context as needed.
