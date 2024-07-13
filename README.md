@@ -88,8 +88,13 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
 #### Setting Up Your Own Copy of the Repository
 
-1. **Fork the repo on GitHub to your personal account.** Click the `Fork` button on the `gajabaar/2024-playground` Public page. (This needs to be done only once.)
-2.  **Clone the repository.** Click the green "Clone or download" button, copy the repository's URL, and type `git clone repo-url` in the terminal:
+1.  **Fork the repo on GitHub to your personal account.** Click the `Fork` button on the `gajabaar/2024-playground` Public page. (This needs to be done only once.)
+
+    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 0.png" alt=""><figcaption></figcaption></figure>
+2.  After clicking the **Fork button**, we will be redirected to a page where we can customize our forked repository. Here, we don't need to make any changes, as everything looks fine. So, we processed by clicking on `Create fork` button.
+
+    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 1.png" alt=""><figcaption></figcaption></figure>
+3.  **Clone the repository.** Click the green "Clone or download" button, copy the repository's URL, and type `git clone repo-url` in the terminal:
 
     ```bash
     git clone git@github.com:your_username/2024-playground.git
