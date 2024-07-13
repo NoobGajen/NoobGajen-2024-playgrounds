@@ -94,29 +94,25 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 2.  After clicking the **Fork button**, we will be redirected to a page where we can customize our forked repository. Here, we don't need to make any changes, as everything looks fine. So, we processed by clicking on `Create fork` button.
 
     <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 1.png" alt=""><figcaption></figcaption></figure>
-3.  **Clone the repository.** Click the green "Clone or download" button, copy the repository's URL, and type `git clone repo-url` in the terminal:
+3.  &#x20;**Clone the repository:** Click on the green `Code` button. It will open a small window. Then click on `SSH` and copy the repository's URL using the copy button or by manually selecting the URL. This URL will be copied to your clipboard. You can use this URL to clone the repository onto your local machine.
 
-    ```bash
-    git clone git@github.com:your_username/2024-playground.git
-    ```
+    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
-#### Organizing Your Work
+#### Organizing our Work
 
-When working on a specific challenge, ensure your contributions are organized as follows:
+When working on a specific challenge, ensure our contributions are organized as follows:
 
-* Create a directory named after the challenge (e.g., `learning_Git` for learngitbranching, `cryptopals` for cryptopals writeups).
-* Within the challenge directory, create a subdirectory named after your GitHub username or handle.
-* Place all your work for that challenge within your subdirectory.
+* Create a directory named after the challenge name directory (e.g., `learning_Git` for learngitbranching, `cryptopals` for cryptopals writeups), etc...
+* Within the challenge directory, create a subdirectory named after our Name or username.
+* Place all our work for that challenge within our subdirectory.
 
 Example structure:
 
-```
-/learning_Git/
-  /your_username/
-    your_files_and_folders_here
-/cryptopals/
-  /your_username/
-    your_files_and_folders_here
+```bash
+/learning_Git/our_username/our_files_and_folders_here
+# Example: 
+# /learning_Git/GajendraMahato/1.1.introduction-sequence-write-up.md
+# /learning_Git/GajendraMahato/1.2.ramping-up-write-up.md
 ```
 
 #### Adding Changes
