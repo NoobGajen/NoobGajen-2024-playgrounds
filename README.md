@@ -1,6 +1,6 @@
 # 2024-Playground Project
 
-Welcome to the `2024-Playground` repository! This document will guide you through the setup process and understanding the contribution guidelines, which is essential for participating in this project.
+Welcome to the `2024-Playground` repository! This document will guide you through the setup process and understanding the contribution guidelines, which are essential for participating in this project.
 
 ## Steps for Contributing
 
@@ -12,10 +12,12 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [Organizing Your Work](./#organizing-your-work)
 * [Adding Changes](./#adding-changes)
 * [Opening a Pull Request on GitHub](./#opening-a-pull-request-on-github)
+* [Understanding Git History](#understanding-git-history)
+* [What to Do While Your Pull Request is Pending Review](#what-to-do-while-your-pull-request-is-pending-review)
 
 ### Setting Up SSH Keys
 
-Setting up SSH keys allows you to securely connect to GitHub without needing to enter your username and password every time you interact with your repository from the command line.
+Setting up SSH keys allows you to securely connect to GitHub without needing to enter your username and password every time you interact with your repository from the command line. For more details, refer to the [GitHub guide on SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 #### **Generating a New SSH Key**
 
@@ -25,7 +27,8 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     ssh-keygen -t rsa -b 4096 -C "sudogajendra@gmail.com"
     ```
 
-    This creates a new SSH key, using the provided email as a label.
+    This creates a new SSH key, using the provided email as a label. [See more](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
 2.  When prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
     ```bash
@@ -43,7 +46,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     ```bash
     eval "$(ssh-agent -s)"
     ```
-2.  Add your SSH private key to the ssh-agent.
+2.  Add your SSH private key to the ssh-agent. [GitHub guide about it](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-your-ssh-key-to-the-ssh-agent).
 
     ```bash
     ssh-add ~/.ssh/id_rsa
@@ -82,6 +85,8 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
 <figure><img src=".files_for_readme/images/Adding the SSH Key to Your GitHub Account 5.png" alt=""><figcaption></figcaption></figure>
 
+For more detailed steps, refer to the [GitHub guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
 ### Setting Up Your Own Copy of the Repository
 
 1.  **Fork the repo on GitHub to your personal account.** Click the `Fork` button on the `gajabaar/2024-playground` Public page. (This needs to be done only once.)
@@ -94,9 +99,12 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
     <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
-    Now, we have the SSH URL of our forked repository, we can use it to clone our forked repo onto our local machine using the command `git clone <repo URL>`.
+    Now, with the SSH URL of your forked repository, you can use it to clone your forked repo onto your local machine using the command `git clone <repo URL>`.
 
     <figure><img src=".files_for_readme/images/Setting Up Your Own Copy of the Repository 3.png" alt=""><figcaption></figcaption></figure>
+
+    For more details, see the [GitHub guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-fork).
+
 
 ### Organizing your Work
 
@@ -183,3 +191,88 @@ Example structure:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
 By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
+
+### Understanding Git History
+
+To understand what happens in your Git history, it's crucial to get familiar with a few commands and terms:
+
+- **origin**: The remote repository you cloned from (your fork).
+- **upstream**: The original repository you forked from (the parent repo).
+
+To view your git history in a helpful way, use the following command:
+
+```bash
+git log --oneline --decorate --graph --all
+```
+
+This command shows a condensed history with decorations and a graphical representation of your branches and commits. For more on this, see the [Git documentation](https://git-scm.com/docs/git-log).
+
+### What to Do While Your Pull Request is Pending Review
+
+There are two common approaches to handling ongoing work while your pull request is pending review:
+
+#### **Approach 1: Continue Working on the Same Branch**
+
+1. **Keep Working on Your Same Branch**:
+   * Continue your work on the same branch while your pull request is pending review.
+2. **After Your Pull Request is Accepted**:
+   * Sync your `main` branch:
+
+     ```bash
+     git checkout main
+     git pull origin main
+     ```
+
+   * Rebase interactively on `main`:
+
+     ```bash
+     git checkout your_branch_name
+     git rebase main
+     ```
+
+   * Push changes again if needed:
+
+     ```bash
+     git push origin your_branch_name
+     ```
+
+This ensures your branch is up-to-date with the latest changes from the `main` branch before creating a new pull request if necessary. For more details on merging and rebasing, refer to the [GitHub guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes/creating-and-editing-pull-requests).
+
+#### **Approach 2: Create a New Branch for Continued Work**
+
+1. **Create a New Branch**:
+   * If your pull request is pending from the `writeup` branch, create a new branch such as `writeup1` for continued work.
+
+     ```bash
+     git checkout -b writeup1
+     ```
+
+2. **Continue Your Work on the New Branch**:
+   * Make changes, commit, and push to the new branch.
+
+3. **Once the Pull Request is Accepted**:
+   * Sync your `main` branch:
+
+     ```bash
+     git checkout main
+     git pull origin main
+     ```
+
+   * Rebase interactively on `main`:
+
+     ```bash
+     git checkout writeup1
+     git rebase main
+     ```
+
+   * Push changes again if needed:
+
+     ```bash
+     git push origin writeup1
+     ```
+
+This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.
+
+---
+
+Feel free to adjust any parts to better match your style or to provide additional context as needed.
