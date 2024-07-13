@@ -215,61 +215,57 @@ When your pull request is under review, you have two common strategies for manag
 
 1. **Keep Working on Your Branch**:
    * Continue making changes and improvements on your existing branch while awaiting review.
+2.  **After Your Pull Request is Accepted**:
 
-2. **After Your Pull Request is Accepted**:
-   * Ensure your local `main` branch is up-to-date:
+    1.  Ensure your local `main` branch is up-to-date:
 
-     ```bash
-     git checkout main
-     git pull origin main
-     ```
-   
-   * Rebase your branch on `main` to incorporate any new changes:
+        ```bash
+        git checkout main
+        git pull origin main
+        ```
 
-     ```bash
-     git checkout your_branch_name
-     git rebase main
-     ```
-   
-   * Push your changes to update your pull request:
+        <figure><img src=".gitbook/assets/Continue Working on the Same Branch 0.png" alt=""><figcaption></figcaption></figure>
+    2.  Rebase your branch on `main` to incorporate any new changes:
 
-     ```bash
-     git push origin your_branch_name
-     ```
+        ```bash
+        git checkout your_branch_name
+        git rebase main
+        ```
+    3.  Push your changes to update your pull request:
 
-   This approach maintains a single branch for ongoing work, ensuring all changes are consolidated before finalizing the pull request.
+        ```bash
+        git push origin your_branch_name
+        ```
+
+    This approach maintains a single branch for ongoing work, ensuring all changes are consolidated before finalizing the pull request.
 
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
-   * If you prefer a cleaner history in your pull request, create a new branch for further modifications:
+   *   If you prefer a cleaner history in your pull request, create a new branch for further modifications:
 
-     ```bash
-     git checkout -b writeup1
-     ```
-   
+       ```bash
+       git checkout -b writeup1
+       ```
 2. **Continue Your Work on the New Branch**:
    * Make necessary changes, commit them, and push to the new branch.
-
 3. **Once the Pull Request is Accepted**:
-   * Sync your `main` branch to include any updates:
+   *   Sync your `main` branch to include any updates:
 
-     ```bash
-     git checkout main
-     git pull origin main
-     ```
-   
-   * Rebase your new branch on `main` to incorporate the latest changes:
+       ```bash
+       git checkout main
+       git pull origin main
+       ```
+   *   Rebase your new branch on `main` to incorporate the latest changes:
 
-     ```bash
-     git checkout writeup1
-     git rebase main
-     ```
-   
-   * Push the changes to update your new branch:
+       ```bash
+       git checkout writeup1
+       git rebase main
+       ```
+   *   Push the changes to update your new branch:
 
-     ```bash
-     git push origin writeup1
-     ```
+       ```bash
+       git push origin writeup1
+       ```
 
 This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.
