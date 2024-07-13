@@ -119,30 +119,43 @@ Example structure:
 
 ### Adding Changes
 
-1.  First of all, make sure you are in your repository directory:
+1. **Navigate to Your Repository Directory**:
+   *   Before making any changes, ensure you are in your local repository directory using the following command:
 
-    ```bash
-    cd 2024-playground
-    ```
-2.  After cloning the repository, create a new branch.:
+       ```bash
+       cd 2024-playground
+       ```
+2. **List Existing Branches**:
+   *   To view all existing branches in your local repository, use the command:
+
+       ```bash
+       git branch -a
+       ```
+3. **Create and Switch to a New Branch**:
+
+*   After cloning the repository, create a new branch for your changes and switch to it:
 
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
-3.  Once you have created your branch, make your changes and commit them:
+* This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 
-    ```bash
-    git add .
-    git commit -m "Descriptive message of what you did"
-    ```
-4.  **Push up your changes.** Push your changes to your fork:
+4. **Make Changes and Commit**:
+   *   Once you have switched to your branch, make your desired changes to the codebase:
 
-    ```bash
-    git push origin your_branch_name
-    ```
+       ```bash
+       git add .
+       git commit -m "Descriptive message of what you did"
+       ```
+   * The `git add .` command stages all changes in your working directory for commit, while `git commit` records the changes with a descriptive message explaining the purpose of the commit.
+5. **Push Your Changes**:
+   *   Finally, push your committed changes to your forked repository on GitHub:
 
-
+       ```bash
+       git push origin your_branch_name
+       ```
+   * This command sends your local branch and commits to the remote repository, making them accessible for collaboration and review.
 
 ### Making a Pull Request
 
