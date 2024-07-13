@@ -244,28 +244,31 @@ When your pull request is under review, you have two common strategies for manag
 #### **Approach 2: Create a New Branch for Continued Work**
 
 1. **Create a New Branch**:
-   *   If you prefer a cleaner history in your pull request, create a new branch for further modifications:
+   * If you prefer a cleaner history in your pull request, leave the branch you used to open the pull request (`Gajendra/writeup`) as it is and create a new branch such as `Gajendra/writeup_v1.2` for further modifications:
 
-       ```bash
-       git checkout -b writeup_v1.2
-       ```
-2. **Continue Your Work on the New Branch**:
-   * Make necessary changes, commit them, and push to the new branch.
-3. **Once the Pull Request is Accepted**:
-   1.  Sync your `main` branch to include any updates:
+     ```bash
+     git checkout -b Gajendra/writeup_v1.2
+     ```
 
-       ```bash
-       git checkout main
-       git pull origin main
-       ```
-   2.  Rebase your new branch on `main` to sync the latest changes:
+2. **Once the Pull Request is Accepted**:
+   1. Sync your `main` branch to include the latest modifications and updates:
 
-       ```bash
-       git checkout writeup_v1.2
-       git rebase main
-       ```
-   3.  Push the changes to update your new branch:
+      ```bash
+      git checkout main
+      git pull origin main
+      ```
 
-       ```bash
-       git push origin writeup_v1.2
-       ```
+   2. Rebase your new branch on `main` to incorporate the latest changes:
+
+      ```bash
+      git checkout Gajendra/writeup_v1.2
+      git rebase main
+      ```
+
+   3. Push the changes to update your new branch:
+
+      ```bash
+      git push origin Gajendra/writeup_v1.2
+      ```
+
+This approach involves maintaining multiple branches for ongoing work, ensuring all changes are synchronized and maintaining a cleaner history in your pull request.
