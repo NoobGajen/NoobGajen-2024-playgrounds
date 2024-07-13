@@ -266,7 +266,3 @@ This ensures your branch is up-to-date with the latest changes from the `main` b
        ```
 
 This approach prevents multiple commits from cluttering the pull request and allows for cleaner management of changes.
-
-***
-
-Feel free to adjust any parts to better match your style or to provide additional context as needed.
