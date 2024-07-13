@@ -16,7 +16,7 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [What to Do While Your Pull Request is Pending Review](./#what-to-do-while-your-pull-request-is-pending-review)
   * [Continue Working on the Same Branch](./#approach-1-continue-working-on-the-same-branch)
   * [Create a New Branch for Continued Work](./#approach-2-create-a-new-branch-for-continued-work)
-    * [**Basic Commands for Branch Management**](./#basic-commands-for-branch-management)
+    * [Basic Commands for Branch Management](./#basic-commands-for-branch-management)
 
 ### Setting Up SSH Keys
 
