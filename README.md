@@ -182,4 +182,4 @@ Example structure:
 5. **Review and Feedback**:
    * Once your pull request is open, the repository's maintainers will review it. They will check the changes and decide whether to merge them into the main branch. If they find any issues or have suggestions, they will provide feedback. Be ready to make additional changes if requested.
 
-By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other developers. Happy coding!
+By following these steps, you can contribute to the `2024-Playground` repository and collaborate effectively with other contributors. Happy learning!
