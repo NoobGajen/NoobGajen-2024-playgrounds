@@ -96,6 +96,10 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
     <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
+    Now, we have the SSH URL of our forked repository, we can use it to clone our forked repo onto our local machine using the command `git clone <repo URL>`.
+
+    <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 3.png" alt=""><figcaption></figcaption></figure>
+
 ### Organizing your Work
 
 When working on a specific challenge, ensure your contributions are organized as follows:
