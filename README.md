@@ -129,16 +129,18 @@ Example structure:
        ```bash
        git branch -a
        ```
+
        <figure><img src=".gitbook/assets/Adding Changes 0.png" alt=""><figcaption></figcaption></figure>
 3.  **Create and Switch to a New Branch**:
 
-    *   After cloning the repository, create a new branch for your changes and switch to it:
+    * After cloning the repository, create a new branch for your changes and switch to it:
 
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
-       <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
 
     This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 4. **Make Changes and Commit**:
@@ -148,6 +150,8 @@ Example structure:
        git add .
        git commit -m "Descriptive message of what you did"
        ```
+
+       <figure><img src=".gitbook/assets/Adding Changes 2.png" alt=""><figcaption></figcaption></figure>
    * The `git add .` command stages all changes in your working directory for commit, while `git commit` records the changes with a descriptive message explaining the purpose of the commit.
 5. **Push Your Changes**:
    *   Finally, push your committed changes to your forked repository on GitHub:
