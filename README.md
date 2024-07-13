@@ -1,27 +1,25 @@
 # 2024-Playground Project
 
-## 2024-Playground Project
-
 Welcome to the `2024-Playground` repository! This document will guide you through the setup process and understanding the contribution guidelines, which is essential for participating in this project.
 
-### Steps for Contributing
+## Steps for Contributing
 
-* Setting Up SSH Keys
-  * Generating a New SSH Key
-  * Adding Your SSH Key to the ssh-agent
-  * Adding the SSH Key to Your GitHub Account
-* Setting Up Your Own Copy of the Repository (Forked Repository)
-* Organizing Your Work
-* Adding Changes
-* Making a Pull Request
-* Pushing Additional Changes
-* Making a Pull Request
+* [Setting Up SSH Keys](./#setting-up-ssh-keys)
+  * [Generating a New SSH Key](./#generating-a-new-ssh-key)
+  * [Adding Your SSH Key to the ssh-agent](./#adding-your-ssh-key-to-the-ssh-agent)
+  * [Adding the SSH Key to Your GitHub Account](./#adding-the-ssh-key-to-your-github-account)
+* [Setting Up Your Own Copy of the Repository (Forked Repository)](./#setting-up-your-own-copy-of-the-repository)
+* [Organizing Your Work](./#organizing-your-work)
+* [Adding Changes](./#adding-changes)
+* [Making a Pull Request](./#making-a-pull-request)
 
-#### Setting Up SSH Keys
+
+
+### Setting Up SSH Keys
 
 Setting up SSH keys allows you to securely connect to GitHub without needing to enter your username and password every time you interact with your repository from the command line.
 
-**Generating a New SSH Key**
+#### **Generating a New SSH Key**
 
 1.  Open a terminal and paste the following command with your email address:
 
@@ -40,7 +38,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 
 <figure><img src=".gitbook/assets/Generating a New SSH Key 0.png" alt=""><figcaption></figcaption></figure>
 
-**Adding Your SSH Key to the ssh-agent**
+#### **Adding Your SSH Key to the ssh-agent**
 
 1.  Start the ssh-agent in the background.
 
@@ -53,7 +51,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
     ssh-add ~/.ssh/id_rsa
     ```
 
-**Adding the SSH Key to Your GitHub Account**
+#### **Adding the SSH Key to Your GitHub Account**
 
 1.  Copy the SSH key to your clipboard.
 
@@ -86,7 +84,7 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
 <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 5.png" alt=""><figcaption></figcaption></figure>
 
-#### Setting Up Your Own Copy of the Repository
+### Setting Up Your Own Copy of the Repository
 
 1.  **Fork the repo on GitHub to your personal account.** Click the `Fork` button on the `gajabaar/2024-playground` Public page. (This needs to be done only once.)
 
@@ -98,13 +96,13 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 
     <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
-#### Organizing our Work
+### Organizing your Work
 
-When working on a specific challenge, ensure our contributions are organized as follows:
+When working on a specific challenge, ensure your contributions are organized as follows:
 
 * Create a directory named after the challenge name directory (e.g., `learning_Git` for learngitbranching, `cryptopals` for cryptopals writeups), etc...
-* Within the challenge directory, create a subdirectory named after our Name or username.
-* Place all our work for that challenge within our subdirectory.
+* Within the challenge directory, create a subdirectory named after your Name or username.
+* Place all your work for that challenge within our subdirectory.
 
 Example structure:
 
@@ -115,7 +113,7 @@ Example structure:
 # /learning_Git/GajendraMahato/1.2.ramping-up-write-up.md
 ```
 
-#### Adding Changes
+### Adding Changes
 
 1.  **Update main.** Before you make any changes, first checkout main:
 
@@ -141,24 +139,9 @@ Example structure:
     git push origin your_branch_name
     ```
 
-#### Making a Pull Request
 
-1. **Create a pull request.** Go to your fork on GitHub, and you should see a button to create a pull request from your branch.
-2. **Review and submit.** Double-check to ensure you are making a pull request against the right branch. Enter a descriptive title in the title field.
 
-#### Pushing Additional Changes
-
-If additional changes are necessary after creating the pull request, **do not create a new pull request**. Instead, make more commits to your branch and push them up:
-
-```bash
-git add -A
-git commit -m "Additional changes"
-git push origin your_branch_name
-```
-
-These changes will be added to the pull request automatically.
-
-#### Making a Pull Request
+### Making a Pull Request
 
 1.  **Switch to the branch where you made changes.**
 
