@@ -13,8 +13,6 @@ Welcome to the `2024-Playground` repository! This document will guide you throug
 * [Adding Changes](./#adding-changes)
 * [Making a Pull Request](./#making-a-pull-request)
 
-
-
 ### Setting Up SSH Keys
 
 Setting up SSH keys allows you to securely connect to GitHub without needing to enter your username and password every time you interact with your repository from the command line.
@@ -70,7 +68,7 @@ Setting up SSH keys allows you to securely connect to GitHub without needing to 
 2.  In the upper-right corner of any page, click your **profile photo**,
 
     <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 1.png" alt=""><figcaption></figcaption></figure>
-3.  Then, click on  **Settings**.
+3.  Then, click on **Settings**.
 
     <figure><img src=".gitbook/assets/Adding the SSH Key to Your GitHub Account 2.png" alt=""><figcaption></figcaption></figure>
 4.  In the user settings sidebar, click **SSH and GPG keys,** then click on "**New SSH key**"
@@ -92,7 +90,7 @@ After inserting all the details, click 'Add SSH key' button. If it prompted for 
 2.  After clicking the **Fork button**, we will be redirected to a page where we can customize our forked repository. Here, we don't need to make any changes, as everything looks fine. So, we processed by clicking on `Create fork` button.
 
     <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 1.png" alt=""><figcaption></figcaption></figure>
-3.  &#x20;**Clone the repository:** Click on the green `Code` button. It will open a small window. Then click on `SSH` and copy the repository's URL using the copy button or by manually selecting the URL. This URL will be copied to your clipboard. You can use this URL to clone the repository onto your local machine.
+3.  **Clone the repository:** Click on the green `Code` button. It will open a small window. Then click on `SSH` and copy the repository's URL using the copy button or by manually selecting the URL. This URL will be copied to your clipboard. You can use this URL to clone the repository onto your local machine.
 
     <figure><img src=".gitbook/assets/Setting Up Your Own Copy of the Repository 2.png" alt=""><figcaption></figcaption></figure>
 
@@ -131,16 +129,20 @@ Example structure:
        ```bash
        git branch -a
        ```
-3. **Create and Switch to a New Branch**:
+
+       <figure><img src=".gitbook/assets/Adding Changes 0.png" alt=""><figcaption></figcaption></figure>
+3.  **Create and Switch to a New Branch**:
 
     *   After cloning the repository, create a new branch for your changes and switch to it:
+
+        <figure><img src=".gitbook/assets/Adding Changes 1.png" alt=""><figcaption></figcaption></figure>
 
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
-    * This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 
+    * This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 4. **Make Changes and Commit**:
    *   Once you have switched to your branch, make your desired changes to the codebase:
 
