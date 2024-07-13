@@ -133,13 +133,13 @@ Example structure:
        ```
 3. **Create and Switch to a New Branch**:
 
-*   After cloning the repository, create a new branch for your changes and switch to it:
+    *   After cloning the repository, create a new branch for your changes and switch to it:
 
     ```bash
     git branch your_branch_name
     git checkout your_branch_name
     ```
-* This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
+    * This step ensures that your changes are independent of the main branch until they are ready for integration, avoiding conflicts with other branches.
 
 4. **Make Changes and Commit**:
    *   Once you have switched to your branch, make your desired changes to the codebase:
